@@ -1,11 +1,10 @@
+import { useState } from 'react';
+// COMPONENTS
 import Header from '../components/header/header';
 
 export default function Home() {
   return (
     <div>
-
-      <Header />
-
       Features
       Pricing
       Contact
@@ -113,13 +112,6 @@ export default function Home() {
       Features
       Pricing
       Contact
-
-      <footer>
-        <p className="attribution">
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-          Coded by <a href="#">Your Name Here</a>.
-        </p>
-      </footer>
     </div>
   )
 }

@@ -1,5 +1,8 @@
-import Head from 'next/head';
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
+// COMPONENTS
+import Head from 'next/head';
+import Layout from '../components/layout/layout';
+
 
 const GlobalStyle = createGlobalStyle`
 
@@ -19,6 +22,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-family: 'Rubik', sans-serif;
     font-size: 1.125rem;
+    font-weight: 400;
   }
   
   a {
@@ -37,6 +41,16 @@ const GlobalStyle = createGlobalStyle`
   p {
     margin: 0;
   }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  button {
+    cursor: pointer;
+  }
 `;
 
 const theme = {
@@ -44,8 +58,19 @@ const theme = {
     primary: 'hsl(231, 69%, 60%)',
     secondry: 'hsl(0, 94%, 66%)',
     grayishBlue: 'hsl(229, 8%, 60%)',
-    veryDarkBlue: 'hsl(229, 31%, 21%)'
+    veryDarkBlue: 'hsl(229, 31%, 21%)',
+    white: '#FFF'
   },
+  animations: {
+    transitionTime: 200
+  },
+  bp: {
+    xs: '375px',
+    sm: '480px',
+    md: '768px',
+    lg: '1024px',
+    xl: '1440px'
+  }
 };
 
 function MyApp({ Component, pageProps }) {
@@ -58,7 +83,9 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </ThemeProvider>
     </>
   )

@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+// COMPONENTS
+import PrimaryButton from '../button/primary';
 
 const HERO_IMG = '/images/illustration-hero.svg';
 
 const StyledSection = styled.section`
-    margin-bottom: 5rem;
-
     @media (min-width: ${({ theme }) => theme.bp.md}) {
         width: 100%;
         display: flex;
@@ -13,7 +13,6 @@ const StyledSection = styled.section`
         align-items: center;
         align-self: flex-end;
         padding-left: 10%;
-        margin-bottom: 4rem;
     }
 `;
 
@@ -66,30 +65,14 @@ const ButtonsWrapper = styled.div`
     @media (min-width: ${({ theme }) => theme.bp.md}) {
         justify-content: flex-start;
     }
-    
-    > button {
-        border: none;
+
+    > button:last-child {
         padding: 0.875rem;
         border-radius: ${({ theme }) => theme.radius.s};
         font-size: 0.875rem;
         font-weight: 600;
         border: 2px solid transparent;
         transition: all 200ms ease-in-out;
-    }
-
-    > button:first-child {
-        margin-right: 1rem;
-        background-color: ${({ theme }) => theme.colors.primary};
-        color: ${({ theme }) => theme.colors.white};
-
-        &:hover {
-            background-color: ${({ theme }) => theme.colors.white};
-            color: ${({ theme }) => theme.colors.primary};
-            border-color: ${({ theme }) => theme.colors.primary};
-        }
-    }
-
-    > button:last-child {
         background-color: ${({ theme }) => theme.colors.white};
         color: ${({ theme }) => theme.colors.veryDarkBlue};
         box-shadow: ${({ theme }) => theme.shadow[1]};
@@ -114,7 +97,7 @@ function Hero() {
                     browser tab and see your sites load instantly. Try it for free.
                 </p>
                 <ButtonsWrapper>
-                    <button> Get it on Chrome </button>
+                    <PrimaryButton> Get it on Chrome </PrimaryButton>
                     <button> Get it on Firefox </button>
                 </ButtonsWrapper>
             </StyledHeroDetails>

@@ -41,9 +41,9 @@ function NvgMenu({ isMenuOpen }) {
     return (
         <StyledNvgMenu isMenuOpen={isMenuOpen}>
             <ul>
-                <li>Features</li>
-                <li>Pricing</li>
-                <li>Contact</li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
             <button>Login</button>
         </StyledNvgMenu>

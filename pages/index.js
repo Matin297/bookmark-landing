@@ -1,40 +1,12 @@
 // COMPONENTS
 import Hero from '../components/hero/hero';
+import Features from '../components/features/features';
 
 export default function Home() {
   return (
     <>
       <Hero />
-
-      Features
-
-      Our aim is to make it quick and easy for you to access your favourite websites.
-      Your bookmarks sync between your devices so you can access them on the go.
-
-      Simple Bookmarking
-      Speedy Searching
-      Easy Sharing
-
-      Bookmark in one click
-
-      Organize your bookmarks however you like. Our simple drag-and-drop interface
-      gives you complete control over how you manage your favourite sites.
-
-      More Info
-
-      Intelligent search
-
-      Our powerful search feature will help you find saved sites in no time at all.
-      No need to trawl through all of your bookmarks.
-
-      More Info
-
-      Share your bookmarks
-
-      Easily share your bookmarks and collections with others. Create a shareable
-      link that you can send at the click of a button.
-
-      More Info
+      <Features />
 
       Download the extension
 

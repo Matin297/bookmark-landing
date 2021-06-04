@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     font-size: 100%;
+    scroll-behavior: smooth;
   }
   
   *,
@@ -53,6 +54,9 @@ const GlobalStyle = createGlobalStyle`
 
   button {
     cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: inherit;
   }
 
   h1 {
@@ -67,6 +71,21 @@ const GlobalStyle = createGlobalStyle`
 
     @media (min-width: 1024px) {
       font-size: 45px;
+    }
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: hsl(229, 31%, 21%);
+    margin: 1rem 0;
+
+    @media (min-width: 768px) {
+      font-size: 25px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 35px;
     }
   }
 
@@ -95,7 +114,24 @@ const theme = {
   },
   shadow: {
     1: '0px 5px 8px rgb(0, 0, 0, 15%)'
-  }
+  },
+  space: [
+    "0.25rem",
+    "0.5rem",
+    "0.75rem",
+    "1rem",
+    "1.25rem",
+    "1.5rem",
+    "1.75rem",
+    "2rem",
+    "3rem",
+    "4rem",
+    "6rem",
+    "8rem",
+    "12rem",
+    "16rem",
+    "24rem",
+  ]
 };
 
 function MyApp({ Component, pageProps }) {

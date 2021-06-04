@@ -76,7 +76,7 @@ function Header({ isMenuOpen, setIsMenuOpen }) {
                 </Link>
 
                 <StyledNav>
-                    <a href="#">Features</a>
+                    <a href="#features">Features</a>
                     <a href="#">Pricing</a>
                     <a href="#">Contact</a>
                     <StyledButton>Login</StyledButton>

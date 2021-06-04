@@ -6,7 +6,7 @@ import Footer from '../footer/footer';
 import NvgMenu from '../nvg-menu/nvg-menu';
 
 const StyledMain = styled.main`
-    margin-top: 6.0625rem;
+    margin-top: 7.0625rem;
     position: relative;
     display: flex;
     flex-direction: column;

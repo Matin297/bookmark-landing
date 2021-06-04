@@ -1,22 +1,10 @@
-import { useState } from 'react';
 // COMPONENTS
-import Header from '../components/header/header';
+import Hero from '../components/hero/hero';
 
 export default function Home() {
   return (
-    <div>
-      Features
-      Pricing
-      Contact
-      Login
-
-      A Simple Bookmark Manager
-
-      A clean and simple interface to organize your favourite websites. Open a new
-      browser tab and see your sites load instantly. Try it for free.
-
-      Get it on Chrome
-      Get it on Firefox
+    <>
+      <Hero />
 
       Features
 
@@ -112,6 +100,6 @@ export default function Home() {
       Features
       Pricing
       Contact
-    </div>
+    </>
   )
 }

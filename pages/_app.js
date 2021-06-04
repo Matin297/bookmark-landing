@@ -3,7 +3,6 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import Head from 'next/head';
 import Layout from '../components/layout/layout';
 
-
 const GlobalStyle = createGlobalStyle`
 
   html {
@@ -23,6 +22,8 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Rubik', sans-serif;
     font-size: 1.125rem;
     font-weight: 400;
+    color: hsl(229, 8%, 60%);
+    overflow-x: hidden;
   }
   
   a {
@@ -40,6 +41,8 @@ const GlobalStyle = createGlobalStyle`
   
   p {
     margin: 0;
+    font-size: 1rem;
+    line-height: 1.75;
   }
 
   ul {
@@ -51,6 +54,22 @@ const GlobalStyle = createGlobalStyle`
   button {
     cursor: pointer;
   }
+
+  h1 {
+    font-size: 25px;
+    font-weight: 500;
+    color: hsl(229, 31%, 21%);
+    margin: 1rem 0;
+
+    @media (min-width: 768px) {
+      font-size: 35px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 45px;
+    }
+  }
+
 `;
 
 const theme = {
@@ -70,6 +89,12 @@ const theme = {
     md: '768px',
     lg: '1024px',
     xl: '1440px'
+  },
+  radius: {
+    s: '4px'
+  },
+  shadow: {
+    1: '0px 5px 8px rgb(0, 0, 0, 15%)'
   }
 };
 

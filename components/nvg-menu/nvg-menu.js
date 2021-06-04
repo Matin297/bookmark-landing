@@ -7,11 +7,13 @@ const StyledNvgMenu = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    transition: opacity ${({ theme }) => theme.animations.transitionTime}ms ease-in-out;
+    transition: all ${({ theme }) => theme.animations.transitionTime}ms ease-in-out;
     background-color: ${({ theme }) => theme.colors.veryDarkBlue};
+    visibility: ${({ theme, isMenuOpen }) => isMenuOpen ? 'visible' : 'hidden'};
     opacity: ${({ theme, isMenuOpen }) => isMenuOpen ? 0.95 : 0};
     color: ${({ theme }) => theme.colors.white};
     text-align: center;
+    z-index: 2;
 
     & li {
         border-bottom: 0.5px solid ${({ theme }) => theme.colors.grayishBlue};

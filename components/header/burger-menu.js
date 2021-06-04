@@ -30,6 +30,10 @@ const StyledMenu = styled.div`
             transform: rotate(-45deg);
         }
     `}
+
+    @media (min-width: ${({ theme }) => theme.bp.md}) {
+        display: none;
+    }
 `
 
 

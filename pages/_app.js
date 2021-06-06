@@ -59,11 +59,16 @@ const GlobalStyle = createGlobalStyle`
     color: inherit;
   }
 
-  h1 {
-    font-size: 25px;
+  h1,
+  h2,
+  h3 {
     font-weight: 500;
     color: hsl(229, 31%, 21%);
     margin: 1rem 0;
+  }
+
+  h1 {
+    font-size: 25px;
 
     @media (min-width: 768px) {
       font-size: 35px;
@@ -76,9 +81,6 @@ const GlobalStyle = createGlobalStyle`
 
   h2 {
     font-size: 20px;
-    font-weight: 500;
-    color: hsl(229, 31%, 21%);
-    margin: 1rem 0;
 
     @media (min-width: 768px) {
       font-size: 25px;
@@ -86,6 +88,18 @@ const GlobalStyle = createGlobalStyle`
 
     @media (min-width: 1024px) {
       font-size: 35px;
+    }
+  }
+
+  h3 {
+    font-size: 18px;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 25px;
     }
   }
 

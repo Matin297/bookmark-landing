@@ -100,8 +100,8 @@ const StyledImgWrapper = styled.div`
 
     > img {
         width: 80%;
-        max-height: 400px;
-        object-fit: contain
+        max-height: 300px;
+        object-fit: contain;
         margin-right: 1rem;
         @media (min-width: ${({ theme }) => theme.bp.md}) {
             margin-right: 0;

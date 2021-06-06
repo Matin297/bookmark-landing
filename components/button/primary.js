@@ -9,7 +9,6 @@ const StyledButton = styled.button`
     border: 2px solid transparent;
     transition: all 200ms ease-in-out;
 
-    margin-right: 1rem;
     background-color: ${({ theme }) => theme.colors.primary};
     color: ${({ theme }) => theme.colors.white};
 

@@ -1,24 +1,16 @@
 import { useState, useMemo } from 'react';
 import styled from 'styled-components';
 // COMPONENTS
+import SectionWrapper from '../section/index';
+import SectionOpening from '../section/opening';
 import PrimaryButton from '../button/primary';
 
-const StyledSection = styled.div`
+const StyledSectionWrapper = styled(SectionWrapper)`
     text-align: center;
-    margin: 5rem 0;
 
-    > div:first-child {
-        max-width: 500px;
-        margin: auto;
-    }
-
-    > div:not(:last-child) {
+    > div:nth-child(2) {
         padding: 0 1rem;
         margin-bottom: 4rem;
-    }
-
-    @media (min-width: ${({ theme }) => theme.bp.md}) {
-        margin: 6rem 0;
     }
 `;
 
@@ -174,14 +166,11 @@ function FeaturesSection() {
 
     return (
         <section id="features">
-            <StyledSection>
-                <div>
-                    <h2>Features</h2>
-                    <p>
-                        Our aim is to make it quick and easy for you to access your favourite websites.
-                        Your bookmarks sync between your devices so you can access them on the go.
-                </p>
-                </div>
+            <StyledSectionWrapper>
+                <SectionOpening
+                    title="Features"
+                    desc="Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go."
+                />
 
                 <StyledTabsWrapper>
                     {
@@ -208,7 +197,7 @@ function FeaturesSection() {
                         <PrimaryButton> Get it on Firefox </PrimaryButton>
                     </StyledTabDetails>
                 </StyledTabDetailsWrapper>
-            </StyledSection>
+            </StyledSectionWrapper>
         </section>
     )
 }

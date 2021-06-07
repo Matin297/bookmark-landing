@@ -19,9 +19,9 @@ const StyledButton = styled.button`
     }
 `;
 
-function PrimaryButton({ children }) {
+function PrimaryButton({ children, className }) {
     return (
-        <StyledButton>
+        <StyledButton className={className}>
             {children}
         </StyledButton>
     )

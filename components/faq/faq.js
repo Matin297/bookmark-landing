@@ -16,6 +16,7 @@ const StyledSectionWrapper = styled(SectionWrapper)`
 const AccordionWrapper = styled.div`
     max-width: 550px;
     margin: auto;
+    padding: 0 1rem;
 `;
 
 const AccordionItem = styled.div`

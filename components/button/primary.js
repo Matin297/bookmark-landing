@@ -9,19 +9,19 @@ const StyledButton = styled.button`
     border: 2px solid transparent;
     transition: all 200ms ease-in-out;
 
-    background-color: ${({ theme }) => theme.colors.primary};
+    background-color: ${({ theme, color }) => theme.colors[color]};
     color: ${({ theme }) => theme.colors.white};
 
     &:hover {
         background-color: ${({ theme }) => theme.colors.white};
-        color: ${({ theme }) => theme.colors.primary};
-        border-color: ${({ theme }) => theme.colors.primary};
+        color: ${({ theme, color }) => theme.colors[color]};
+        border-color: ${({ theme, color }) => theme.colors[color]};
     }
 `;
 
-function PrimaryButton({ children, className }) {
+function PrimaryButton({ children, className, color = "primary", ...props }) {
     return (
-        <StyledButton className={className}>
+        <StyledButton color={color} className={className} {...props}>
             {children}
         </StyledButton>
     )

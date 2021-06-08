@@ -3,6 +3,7 @@ import Hero from '../components/hero/hero';
 import Features from '../components/features/features';
 import Extensions from '../components/extensions/extensions';
 import FaqSection from '../components/faq/faq';
+import ContactUs from '../components/contact-us/contact-us';
 
 export default function Home() {
   return (
@@ -11,12 +12,7 @@ export default function Home() {
       <Features />
       <Extensions />
       <FaqSection />
-
-      35,000+ already joined
-
-      Stay up-to-date with what we’re doing
-
-      Contact Us
+      <ContactUs />
 
       Features
       Pricing

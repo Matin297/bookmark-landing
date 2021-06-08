@@ -103,6 +103,20 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  input {
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    background-color: white;
+  }
+
+  input::placeholder {
+    color: hsl(229, 8%, 60%);
+    opacity: 0.4;
+    font-size: 14px;
+  }
+
 `;
 
 const theme = {

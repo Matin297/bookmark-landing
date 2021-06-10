@@ -4,6 +4,7 @@ import Features from '../components/features/features';
 import Extensions from '../components/extensions/extensions';
 import FaqSection from '../components/faq/faq';
 import ContactUs from '../components/contact-us/contact-us';
+import Footer from '../components/footer/footer';
 
 export default function Home() {
   return (
@@ -13,10 +14,6 @@ export default function Home() {
       <Extensions />
       <FaqSection />
       <ContactUs />
-
-      Features
-      Pricing
-      Contact
     </>
   )
 }

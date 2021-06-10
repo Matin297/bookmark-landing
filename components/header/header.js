@@ -46,7 +46,7 @@ const StyledNav = styled.nav`
     @media (min-width: ${({ theme }) => theme.bp.md}) {
         display: block;
         text-transform: uppercase;
-        font-size: 10px;
+        font-size: 12px;
     }
 `;
 
